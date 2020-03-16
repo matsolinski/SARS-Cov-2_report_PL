@@ -56,94 +56,109 @@ df_final = pd.DataFrame({
 Country_unique = list(np.unique(df_final['Country/Region']))
 #convert date
 df_final['Date'] = [datetime.datetime.strptime(df_final['Date'][i], '%m/%d/%y') for i in range(0,len(df_final)) ]
- 
+df_final = df_final.sort_values(['Country/Region','Date'])
 
  #nadanie numeru porzadkowego dla kazdego kraju od dnia stwierdzenia 150 przypadków w danym kraju
 for j in range(0,len(Country_unique)):
+     
     countryTemp = Country_unique[j]  
-    list_temp = list(df_final['Country/Region'])
-    res_list = [i for i, value in enumerate(list_temp) if value == countryTemp] 
+   # list_temp = list(df_final['Country/Region'])
+    res_list = [] #lista indeksow w DataFrame df_final, w ktorych wystepuje dany kraj
+    for i in range(0,len(df_final)):
+        if df_final['Country/Region'][i] == countryTemp:
+           res_list.extend([i]) 
+    #res_list = [i for i, value in enumerate(list_temp) if value == countryTemp] 
     
-    ind = 1+1
+    ind = 0
     
-    current_date = df_final["Date"][res_list[1]]
+    current_date = df_final["Date"][res_list[0]]
     
     df_final_temp_confirmed = df_final["Confirmed"][res_list] #wyniki tylko dla danego kraju i jego prowincji
     df_final_temp_date = df_final["Date"][res_list] #wyniki tylko dla danego kraju i jego prowincji
     ind_minus_prepare = 0
-    
+    howManyCasesInCurrentDay = sum(df_final_temp_confirmed[df_final_temp_date == current_date])
     for k in range(0,len(res_list)):
             
         #policz ile bylo przypadkow danego dnia w kraju we wszystkich jego prowincjach/stanach (dotyczy glownie US i Chin)
-        howManyCasesInCurrentDay = sum(df_final_temp_confirmed[df_final_temp_date == current_date])
         
+       
         if howManyCasesInCurrentDay<150:
+            # print(current_date)
             #df_final["OrderNumber"][res_list[k]]=ind_minus
             if current_date != df_final["Date"][res_list[k]]:
                 current_date = df_final["Date"][res_list[k]] #zamiana current date
+                
                 ind_minus_prepare = ind_minus_prepare + 1 #policzenie ile bylo dni z mniej niz 150 przypadkami, co jest konieczne do przypisania ujemnych dni od dnia 0 (osiągnienie 150 przypadkow) kilka linijek nizej
-        else:
-            df_final["OrderNumber_Confirmed"][res_list[k]]=ind #przypisanie dnia od dnia 0 (150 przypadkow)
+        else:        
             if current_date != df_final["Date"][res_list[k]]:
                 current_date = df_final["Date"][res_list[k]] #zamiana current date
                 ind = ind + 1
+            df_final["OrderNumber_Confirmed"][res_list[k]]=ind #przypisanie dnia od dnia 0 (150 przypadkow)    
+        howManyCasesInCurrentDay = sum(df_final_temp_confirmed[df_final_temp_date == current_date])    
  
-    ind_minus2 = 0-ind_minus_prepare+1 #indykator ujemnych dni od dnia zero (150 przypadkow)
-    current_date = df_final["Date"][res_list[1]]
+    ind_minus2 = 0-ind_minus_prepare #indykator ujemnych dni od dnia zero (150 przypadkow)
+    current_date = df_final["Date"][res_list[0]]
     for k in range(0,len(res_list)):
         
         howManyCasesInCurrentDay = sum(df_final_temp_confirmed[df_final_temp_date == current_date])
-        if howManyCasesInCurrentDay<150:
-            df_final["OrderNumber_Confirmed"][res_list[k]]=ind_minus2 #przypisanie ujemnego dnia od dnia 0 (150 przypadkow)
+        if howManyCasesInCurrentDay<150:           
             if current_date != df_final["Date"][res_list[k]]:
                 current_date = df_final["Date"][res_list[k]] #zamiana current date
                 ind_minus2 = ind_minus2 + 1
-                
+            df_final["OrderNumber_Confirmed"][res_list[k]]=ind_minus2 #przypisanie ujemnego dnia od dnia 0 (150 przypadkow)   
 
  #proba nadania numeru porzadkowego dla kazdego kraju od dnia sstwierdzenia przynajmniej 5 zgonow  
 for j in range(0,len(Country_unique)):
+  # j=52
     countryTemp = Country_unique[j]  
-    list_temp = list(df_final['Country/Region'])
-    res_list = [i for i, value in enumerate(list_temp) if value == countryTemp] 
+    res_list = [] #lista indeksow w DataFrame df_final, w ktorych wystepuje dany kraj
+    for i in range(0,len(df_final)):
+        if df_final['Country/Region'][i] == countryTemp:
+           res_list.extend([i]) 
     
-    ind = 1+1
+    ind = 0
     
-    current_date = df_final["Date"][res_list[1]]
+    current_date = df_final["Date"][res_list[0]]
     
     df_final_temp_confirmed = df_final["Deaths"][res_list] #wyniki tylko dla danego kraju i jego prowincji
     df_final_temp_date = df_final["Date"][res_list] #wyniki tylko dla danego kraju i jego prowincji
     ind_minus_prepare = 0
-    
+    howManyCasesInCurrentDay = sum(df_final_temp_confirmed[df_final_temp_date == current_date])
     for k in range(0,len(res_list)):
             
         #policz ile bylo przypadkow danego dnia w kraju we wszystkich jego prowincjach (dotyczy glownie US i Chin)
-        howManyCasesInCurrentDay = sum(df_final_temp_confirmed[df_final_temp_date == current_date])
+        
         
         if howManyCasesInCurrentDay<5:
             #df_final["OrderNumber"][res_list[k]]=ind_minus
             if current_date != df_final["Date"][res_list[k]]:
                 current_date = df_final["Date"][res_list[k]] #current date
+                
                 ind_minus_prepare = ind_minus_prepare + 1
-        else:
-            df_final["OrderNumber_Deaths"][res_list[k]]=ind
+        else:       
             if current_date != df_final["Date"][res_list[k]]:
                 current_date = df_final["Date"][res_list[k]] #current date
                 ind = ind + 1
+            df_final["OrderNumber_Deaths"][res_list[k]]=ind    
+        howManyCasesInCurrentDay = sum(df_final_temp_confirmed[df_final_temp_date == current_date])    
  
-    ind_minus2 = 0-ind_minus_prepare+1
-    current_date = df_final["Date"][res_list[1]]
+    ind_minus2 = 0-ind_minus_prepare
+    current_date = df_final["Date"][res_list[0]]
+    howManyCasesInCurrentDay = sum(df_final_temp_confirmed[df_final_temp_date == current_date])
     for k in range(0,len(res_list)):
         
         howManyCasesInCurrentDay = sum(df_final_temp_confirmed[df_final_temp_date == current_date])
         if howManyCasesInCurrentDay<5:
-            df_final["OrderNumber_Deaths"][res_list[k]]=ind_minus2
             if current_date != df_final["Date"][res_list[k]]:
                 current_date = df_final["Date"][res_list[k]] #current date
                 ind_minus2 = ind_minus2 + 1                
-                
- 
+            df_final["OrderNumber_Deaths"][res_list[k]]=ind_minus2    
+       # howManyCasesInCurrentDay = sum(df_final_temp_confirmed[df_final_temp_date == current_date])
+    
+    # print(df_final["OrderNumber_Deaths"][res_list])
+    # print(df_final["Deaths"][res_list])
                 #export
-df_final.to_excel(r'AllData_15032020_order10.xlsx', index = False)
+df_final.to_excel(r'AllData_15032020_order14.xlsx', index = False)
 
 #ConfirmedCases.to_excel(r'ConfirmedCases.xlsx', index = False)
 #Deaths.to_excel(r'Deaths.xlsx', index = False)
