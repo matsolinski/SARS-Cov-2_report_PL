@@ -22,8 +22,8 @@ from IPython import display
 from ipywidgets import interact, widgets
 
 ## Read Data for Cases, Deaths and Recoveries
-ConfirmedCases_raw=pd.read_csv('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv')
-Deaths_raw=pd.read_csv('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Deaths.csv')
+ConfirmedCases_raw=pd.read_csv('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv')
+Deaths_raw=pd.read_csv('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv')
 Recoveries_raw=pd.read_csv('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Recovered.csv')
 
 #funkcja, ktora zamienia uklad tabeli do takiego, gdzie daty sa w kolejnych wierszach a nie w kolumnach
@@ -31,6 +31,9 @@ def cleandata(df_raw):
     df_cleaned=df_raw.melt(id_vars=['Province/State','Country/Region','Lat','Long'],value_name='Cases',var_name='Date')
     #df_cleaned=df_cleaned.set_index(['Country/Region','Province/State','Date'])
     return df_cleaned 
+
+Country_unique_Confirmed = list(np.unique(ConfirmedCases_raw['Country/Region']))
+
 
 # Clean all datasets
 ConfirmedCases=cleandata(ConfirmedCases_raw)

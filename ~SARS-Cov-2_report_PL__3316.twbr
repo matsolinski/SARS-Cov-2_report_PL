@@ -14,7 +14,7 @@
     <WorksheetBackgroundTransparency />
     <ZoneBackgroundTransparency />
   </document-format-change-manifest>
-  <repository-location derived-from='https://public.tableau.com/workbooks/SART-Cov-2_report_PL?rev=3.3' id='SART-Cov-2_report_PL' path='/workbooks' revision='4.0' />
+  <repository-location derived-from='https://public.tableau.com/workbooks/SART-Cov-2_report_PL?rev=3.3' id='SART-Cov-2_report_PL' path='/workbooks' revision='4.3' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -70,7 +70,7 @@
             </columns>
           </relation>
           <relation connection='excel-direct.1285d930uqkmkr1cj1t1s0k6qwcy' name='Sheet11' table='[Sheet1$]' type='table'>
-            <columns gridOrigin='A1:G217:no:A1:G217:0' header='yes' outcome='2'>
+            <columns gridOrigin='A1:G219:no:A1:G219:0' header='yes' outcome='2'>
               <column datatype='string' name='Continent' ordinal='0' />
               <column datatype='string' name='Country' ordinal='1' />
               <column datatype='string' name='Country_PL' ordinal='2' />
@@ -353,7 +353,7 @@
             <contains-null>true</contains-null>
             <attributes>
               <attribute datatype='integer' name='context'>2</attribute>
-              <attribute datatype='string' name='gridOrigin'>&quot;A1:G217:no:A1:G217:0&quot;</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:G219:no:A1:G219:0&quot;</attribute>
               <attribute datatype='boolean' name='header'>true</attribute>
               <attribute datatype='integer' name='outcome'>2</attribute>
             </attributes>
@@ -429,10 +429,12 @@
             <value>&quot; Czechy&quot;</value>
             <value>&quot; Dania&quot;</value>
             <value>&quot; Demokratyczna Republika Konga&quot;</value>
+            <value>&quot; Dominika&quot;</value>
             <value>&quot; Dominikana&quot;</value>
             <value>&quot; Dżibuti&quot;</value>
             <value>&quot; Egipt&quot;</value>
             <value>&quot; Ekwador&quot;</value>
+            <value>&quot; Erytrea&quot;</value>
             <value>&quot; Estonia&quot;</value>
             <value>&quot; Etiopia&quot;</value>
             <value>&quot; Fidżi&quot;</value>
@@ -443,6 +445,7 @@
             <value>&quot; Gambia&quot;</value>
             <value>&quot; Ghana&quot;</value>
             <value>&quot; Grecja&quot;</value>
+            <value>&quot; Grenada&quot;</value>
             <value>&quot; Gruzja&quot;</value>
             <value>&quot; Gujana&quot;</value>
             <value>&quot; Gwatemala&quot;</value>
@@ -493,6 +496,7 @@
             <value>&quot; Mołdawia&quot;</value>
             <value>&quot; Monako&quot;</value>
             <value>&quot; Mongolia&quot;</value>
+            <value>&quot; Mozambik&quot;</value>
             <value>&quot; Namibia&quot;</value>
             <value>&quot; Nepal&quot;</value>
             <value>&quot; Niemcy&quot;</value>
@@ -511,6 +515,7 @@
             <value>&quot; Południowa Afryka&quot;</value>
             <value>&quot; Portugalia&quot;</value>
             <value>&quot; Republika Środkowoafrykańska&quot;</value>
+            <value>&quot; Republika Zielonego Przylądka&quot;</value>
             <value>&quot; Rosja&quot;</value>
             <value>&quot; Rumunia&quot;</value>
             <value>&quot; Rwanda&quot;</value>
@@ -529,14 +534,17 @@
             <value>&quot; Stany Zjednoczone&quot;</value>
             <value>&quot; Sudan&quot;</value>
             <value>&quot; Surinam&quot;</value>
+            <value>&quot; Syria&quot;</value>
             <value>&quot; Szwajcaria&quot;</value>
             <value>&quot; Szwecja&quot;</value>
             <value>&quot; Tajlandia&quot;</value>
             <value>&quot; Tanzania&quot;</value>
+            <value>&quot; Timor Wschodni&quot;</value>
             <value>&quot; Togo&quot;</value>
             <value>&quot; Trynidad i Tobago&quot;</value>
             <value>&quot; Tunezja&quot;</value>
             <value>&quot; Turcja&quot;</value>
+            <value>&quot; Uganda&quot;</value>
             <value>&quot; Ukraina&quot;</value>
             <value>&quot; Urugwaj&quot;</value>
             <value>&quot; Uzbekistan&quot;</value>
@@ -795,6 +803,7 @@
             <value>&quot;Cambodia&quot;</value>
             <value>&quot;Cameroon&quot;</value>
             <value>&quot;Canada&quot;</value>
+            <value>&quot;Cape Verde&quot;</value>
             <value>&quot;Cayman Islands&quot;</value>
             <value>&quot;Central African Republic&quot;</value>
             <value>&quot;Chad&quot;</value>
@@ -812,11 +821,14 @@
             <value>&quot;Czechia&quot;</value>
             <value>&quot;Denmark&quot;</value>
             <value>&quot;Djibouti&quot;</value>
+            <value>&quot;Dominica&quot;</value>
             <value>&quot;Dominican Republic&quot;</value>
+            <value>&quot;East Timor&quot;</value>
             <value>&quot;Ecuador&quot;</value>
             <value>&quot;Egypt&quot;</value>
             <value>&quot;El Salvador&quot;</value>
             <value>&quot;Equatorial Guinea&quot;</value>
+            <value>&quot;Eritrea&quot;</value>
             <value>&quot;Estonia&quot;</value>
             <value>&quot;Eswatini&quot;</value>
             <value>&quot;Ethiopia&quot;</value>
@@ -831,6 +843,7 @@
             <value>&quot;Ghana&quot;</value>
             <value>&quot;Greece&quot;</value>
             <value>&quot;Greenland&quot;</value>
+            <value>&quot;Grenada&quot;</value>
             <value>&quot;Guadeloupe&quot;</value>
             <value>&quot;Guam&quot;</value>
             <value>&quot;Guatemala&quot;</value>
@@ -879,6 +892,7 @@
             <value>&quot;Mongolia&quot;</value>
             <value>&quot;Montenegro&quot;</value>
             <value>&quot;Morocco&quot;</value>
+            <value>&quot;Mozambique&quot;</value>
             <value>&quot;Namibia&quot;</value>
             <value>&quot;Nepal&quot;</value>
             <value>&quot;Netherlands&quot;</value>
@@ -923,15 +937,18 @@
             <value>&quot;Suriname&quot;</value>
             <value>&quot;Sweden&quot;</value>
             <value>&quot;Switzerland&quot;</value>
+            <value>&quot;Syria&quot;</value>
             <value>&quot;Taiwan*&quot;</value>
             <value>&quot;Tanzania&quot;</value>
             <value>&quot;Thailand&quot;</value>
             <value>&quot;The Bahamas&quot;</value>
             <value>&quot;The Gambia&quot;</value>
+            <value>&quot;Timor-Leste&quot;</value>
             <value>&quot;Togo&quot;</value>
             <value>&quot;Trinidad and Tobago&quot;</value>
             <value>&quot;Tunisia&quot;</value>
             <value>&quot;Turkey&quot;</value>
+            <value>&quot;Uganda&quot;</value>
             <value>&quot;Ukraine&quot;</value>
             <value>&quot;United Arab Emirates&quot;</value>
             <value>&quot;United Kingdom&quot;</value>
@@ -968,6 +985,7 @@
       </column>
       <column-instance column='[Lat]' derivation='Avg' name='[avg:Lat:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Long]' derivation='Avg' name='[avg:Long:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Confirmed]' derivation='Count' name='[cnt:Confirmed:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Country/Region]' derivation='CountD' name='[ctd:Country/Region:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Calculation_672443748371189760]' derivation='Sum' name='[diff:sum:Calculation_672443748371189760:qk]' pivot='key' type='quantitative'>
         <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
@@ -983,8 +1001,23 @@
           </address>
         </table-calc>
       </column-instance>
+      <column-instance column='[Confirmed]' derivation='Sum' name='[diff:sum:Confirmed:qk:1]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-field='[federated.04q75kt1m8wglk1czomo715umt7a].[tdy:Date:qk]' ordering-type='Field' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Confirmed]' derivation='Sum' name='[diff:sum:Confirmed:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
       <column-instance column='[Set 1]' derivation='InOut' name='[io:Set 1:nk]' pivot='key' type='nominal' />
       <column-instance column='[Confirmed]' derivation='Max' name='[max:Confirmed:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Confirmed]' derivation='None' name='[none:Confirmed:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Country_PL]' derivation='None' name='[none:Country_PL:nk]' pivot='key' type='nominal' />
       <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
       <column-instance column='[Lat]' derivation='None' name='[none:Lat:qk]' pivot='key' type='quantitative' />
@@ -992,6 +1025,49 @@
       <column-instance column='[OrderNumber_Confirmed]' derivation='None' name='[none:OrderNumber_Confirmed:qk]' pivot='key' type='quantitative' />
       <column-instance column='[OrderNumber_Deaths]' derivation='None' name='[none:OrderNumber_Deaths:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Rodzaj_przypadku_selector (copy)_672443748372426754]' derivation='None' name='[none:Rodzaj_przypadku_selector (copy)_672443748372426754:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Deaths]' derivation='Sum' name='[pcto:sum:Deaths:qk:2]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='CellInPane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Deaths]' derivation='Sum' name='[pcto:sum:Deaths:qk:3]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='' ordering-type='Field' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Deaths]' derivation='Sum' name='[pcto:sum:Deaths:qk:4]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Deaths]' derivation='Sum' name='[pcto:sum:Deaths:qk:5]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Deaths]' derivation='Sum' name='[pcto:sum:Deaths:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Deaths]' derivation='Sum' name='[pcva:sum:Deaths:qk:1]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-field='' ordering-type='Field' type='PctValue'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Deaths]' derivation='Sum' name='[pcva:sum:Deaths:qk:2]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='PctValue'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Deaths]' derivation='Sum' name='[pcva:sum:Deaths:qk:4]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='CellInPane' type='PctValue'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Deaths]' derivation='Sum' name='[pcva:sum:Deaths:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Columns' type='PctValue'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
       <column-instance column='[Calculation_672443748371189760]' derivation='Sum' name='[sum:Calculation_672443748371189760:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Calculation_672443748374839299]' derivation='Sum' name='[sum:Calculation_672443748374839299:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Calculation_672443748374839299]' derivation='Sum' name='[sum:Calculation_672443748374839299:vtavg:qk]' pivot='key' type='quantitative' visual-totals='Avg' />
@@ -1003,6 +1079,7 @@
       <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Recoveries]' derivation='Sum' name='[sum:Recoveries:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Recoveries]' derivation='Sum' name='[sum:Recoveries:vtavg:qk]' pivot='key' type='quantitative' visual-totals='Avg' />
+      <column-instance column='[Date]' derivation='Day-Trunc' name='[tdy:Date:qk]' pivot='key' type='quantitative' />
       <group caption='Czy Chiny' name='[Czy Chiny]' name-style='unqualified' user:ui-builder='filter-group'>
         <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
           <groupfilter from='&quot; Afganistan&quot;' function='range' level='[Country_PL]' to='&quot; Chile&quot;' />
@@ -1111,7 +1188,7 @@
               <family>Sheet1</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>704</approx-count>
+              <approx-count>648</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LPL_RPL' />
             </metadata-record>
@@ -1125,7 +1202,7 @@
               <family>Sheet1</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>307</approx-count>
+              <approx-count>405</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LPL_RPL' />
             </metadata-record>
@@ -1139,7 +1216,7 @@
               <family>Sheet1</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>980</approx-count>
+              <approx-count>1019</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1152,7 +1229,7 @@
               <family>Sheet1</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>949</approx-count>
+              <approx-count>976</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1165,7 +1242,7 @@
               <family>Sheet1</family>
               <local-type>date</local-type>
               <aggregation>Year</aggregation>
-              <approx-count>59</approx-count>
+              <approx-count>62</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1178,7 +1255,7 @@
               <family>Sheet1</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>530</approx-count>
+              <approx-count>551</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1191,7 +1268,7 @@
               <family>Sheet1</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>77</approx-count>
+              <approx-count>52</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1204,7 +1281,7 @@
               <family>Sheet1</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>342</approx-count>
+              <approx-count>382</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1217,7 +1294,7 @@
               <family>Sheet1</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>187</approx-count>
+              <approx-count>196</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1230,7 +1307,7 @@
               <family>Sheet1</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>173</approx-count>
+              <approx-count>187</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1243,7 +1320,7 @@
               <family>Sheet11</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>7</approx-count>
+              <approx-count>10</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LPL_RPL' />
             </metadata-record>
@@ -1257,7 +1334,7 @@
               <family>Sheet11</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>307</approx-count>
+              <approx-count>405</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LPL_RPL' />
             </metadata-record>
@@ -1271,7 +1348,7 @@
               <family>Sheet11</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>307</approx-count>
+              <approx-count>388</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LPL_RPL' />
             </metadata-record>
@@ -1285,7 +1362,7 @@
               <family>Sheet11</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>306</approx-count>
+              <approx-count>376</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LPL_RPL' />
             </metadata-record>
@@ -1299,7 +1376,7 @@
               <family>Sheet11</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>307</approx-count>
+              <approx-count>388</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LPL_RPL' />
             </metadata-record>
@@ -1313,7 +1390,7 @@
               <family>Sheet11</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>307</approx-count>
+              <approx-count>393</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1326,13 +1403,13 @@
               <family>Sheet11</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>265</approx-count>
+              <approx-count>328</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
           </metadata-records>
         </connection>
       </extract>
-      <layout dim-ordering='alphabetic' dim-percentage='0.493976' group-percentage='0.356928' measure-ordering='alphabetic' measure-percentage='0.106928' parameter-percentage='0.0421687' rowDisplayCount='50000' show-aliased-fields='true' show-structure='true' user-set-layout='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.490385' group-percentage='0.357143' measure-ordering='alphabetic' measure-percentage='0.10989' parameter-percentage='0.0425824' rowDisplayCount='50000' show-aliased-fields='true' show-structure='true' user-set-layout='true' />
       <style>
         <style-rule element='mark'>
           <encoding attr='color' field='[io:Set 1:nk]' type='palette'>
@@ -1710,6 +1787,12 @@
               <bucket>&quot;[federated.04q75kt1m8wglk1czomo715umt7a]&quot;</bucket>
             </map>
             <map to='#b07aa1'>
+              <bucket>&quot;[federated.04q75kt1m8wglk1czomo715umt7a].[usr:Calculation_1329406346694873089:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.04q75kt1m8wglk1czomo715umt7a].[usr:Calculation_1329406346695274500:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
               <bucket>&quot;[Parameters].[Parameter 1]&quot;</bucket>
             </map>
             <map to='#e15759'>
@@ -1719,10 +1802,40 @@
               <bucket>&quot;[federated.04q75kt1m8wglk1czomo715umt7a].[none:Calculation_253890458676391936:qk]&quot;</bucket>
             </map>
             <map to='#e15759'>
+              <bucket>&quot;[federated.04q75kt1m8wglk1czomo715umt7a].[pcto:sum:Deaths:qk:2]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.04q75kt1m8wglk1czomo715umt7a].[pcto:sum:Deaths:qk:3]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.04q75kt1m8wglk1czomo715umt7a].[pcto:sum:Deaths:qk:4]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.04q75kt1m8wglk1czomo715umt7a].[pcto:sum:Deaths:qk:5]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.04q75kt1m8wglk1czomo715umt7a].[pcto:sum:Deaths:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.04q75kt1m8wglk1czomo715umt7a].[pcva:sum:Deaths:qk:1]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.04q75kt1m8wglk1czomo715umt7a].[pcva:sum:Deaths:qk:2]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.04q75kt1m8wglk1czomo715umt7a].[pcva:sum:Deaths:qk:4]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.04q75kt1m8wglk1czomo715umt7a].[pcva:sum:Deaths:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
               <bucket>&quot;[federated.04q75kt1m8wglk1czomo715umt7a].[sum:Deaths:qk]&quot;</bucket>
             </map>
             <map to='#e15759'>
               <bucket>&quot;[federated.04q75kt1m8wglk1czomo715umt7a].[sum:Deaths:vtavg:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.04q75kt1m8wglk1czomo715umt7a].[usr:Calculation_1329406346707210247:qk]&quot;</bucket>
             </map>
             <map to='#e15759'>
               <bucket>&quot;[federated.04q75kt1m8wglk1czomo715umt7a].[usr:Calculation_253890458676420609:qk]&quot;</bucket>
@@ -2299,6 +2412,14 @@
         <param name='target' value='D_Chiny_reszta' />
       </command>
     </action>
+    <action caption='Highlight 3 (generated)' name='[Action3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='D_day0' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Country_PL' />
+        <param name='target' value='D_day0' />
+      </command>
+    </action>
     <action caption='Highlight 4 (generated)' name='[Action4]'>
       <activation auto-clear='true' type='on-select' />
       <source type='sheet' worksheet='Chiny_vs_reszta (2)' />
@@ -2510,6 +2631,7 @@
                   <value>&quot;Cambodia&quot;</value>
                   <value>&quot;Cameroon&quot;</value>
                   <value>&quot;Canada&quot;</value>
+                  <value>&quot;Cape Verde&quot;</value>
                   <value>&quot;Cayman Islands&quot;</value>
                   <value>&quot;Central African Republic&quot;</value>
                   <value>&quot;Chad&quot;</value>
@@ -2527,11 +2649,14 @@
                   <value>&quot;Czechia&quot;</value>
                   <value>&quot;Denmark&quot;</value>
                   <value>&quot;Djibouti&quot;</value>
+                  <value>&quot;Dominica&quot;</value>
                   <value>&quot;Dominican Republic&quot;</value>
+                  <value>&quot;East Timor&quot;</value>
                   <value>&quot;Ecuador&quot;</value>
                   <value>&quot;Egypt&quot;</value>
                   <value>&quot;El Salvador&quot;</value>
                   <value>&quot;Equatorial Guinea&quot;</value>
+                  <value>&quot;Eritrea&quot;</value>
                   <value>&quot;Estonia&quot;</value>
                   <value>&quot;Eswatini&quot;</value>
                   <value>&quot;Ethiopia&quot;</value>
@@ -2546,6 +2671,7 @@
                   <value>&quot;Ghana&quot;</value>
                   <value>&quot;Greece&quot;</value>
                   <value>&quot;Greenland&quot;</value>
+                  <value>&quot;Grenada&quot;</value>
                   <value>&quot;Guadeloupe&quot;</value>
                   <value>&quot;Guam&quot;</value>
                   <value>&quot;Guatemala&quot;</value>
@@ -2594,6 +2720,7 @@
                   <value>&quot;Mongolia&quot;</value>
                   <value>&quot;Montenegro&quot;</value>
                   <value>&quot;Morocco&quot;</value>
+                  <value>&quot;Mozambique&quot;</value>
                   <value>&quot;Namibia&quot;</value>
                   <value>&quot;Nepal&quot;</value>
                   <value>&quot;Netherlands&quot;</value>
@@ -2638,15 +2765,18 @@
                   <value>&quot;Suriname&quot;</value>
                   <value>&quot;Sweden&quot;</value>
                   <value>&quot;Switzerland&quot;</value>
+                  <value>&quot;Syria&quot;</value>
                   <value>&quot;Taiwan*&quot;</value>
                   <value>&quot;Tanzania&quot;</value>
                   <value>&quot;Thailand&quot;</value>
                   <value>&quot;The Bahamas&quot;</value>
                   <value>&quot;The Gambia&quot;</value>
+                  <value>&quot;Timor-Leste&quot;</value>
                   <value>&quot;Togo&quot;</value>
                   <value>&quot;Trinidad and Tobago&quot;</value>
                   <value>&quot;Tunisia&quot;</value>
                   <value>&quot;Turkey&quot;</value>
+                  <value>&quot;Uganda&quot;</value>
                   <value>&quot;Ukraine&quot;</value>
                   <value>&quot;United Arab Emirates&quot;</value>
                   <value>&quot;United Kingdom&quot;</value>
@@ -2958,7 +3088,7 @@
             </dictionary>
           </manual-sort>
           <filter class='categorical' column='[federated.04q75kt1m8wglk1czomo715umt7a].[none:Country_PL:nk]' filter-group='5'>
-            <groupfilter function='member' level='[none:Country_PL:nk]' member='&quot; Włochy&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='member' level='[none:Country_PL:nk]' member='&quot; Wielka Brytania&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <filter class='relative-date' column='[federated.04q75kt1m8wglk1czomo715umt7a].[none:Date:qk]' first-period='-1' include-future='true' include-null='false' last-period='-1' period-type='day' period-type-v2='day' />
           <slices>
@@ -3121,6 +3251,7 @@
                   <value>&quot;Cambodia&quot;</value>
                   <value>&quot;Cameroon&quot;</value>
                   <value>&quot;Canada&quot;</value>
+                  <value>&quot;Cape Verde&quot;</value>
                   <value>&quot;Cayman Islands&quot;</value>
                   <value>&quot;Central African Republic&quot;</value>
                   <value>&quot;Chad&quot;</value>
@@ -3138,11 +3269,14 @@
                   <value>&quot;Czechia&quot;</value>
                   <value>&quot;Denmark&quot;</value>
                   <value>&quot;Djibouti&quot;</value>
+                  <value>&quot;Dominica&quot;</value>
                   <value>&quot;Dominican Republic&quot;</value>
+                  <value>&quot;East Timor&quot;</value>
                   <value>&quot;Ecuador&quot;</value>
                   <value>&quot;Egypt&quot;</value>
                   <value>&quot;El Salvador&quot;</value>
                   <value>&quot;Equatorial Guinea&quot;</value>
+                  <value>&quot;Eritrea&quot;</value>
                   <value>&quot;Estonia&quot;</value>
                   <value>&quot;Eswatini&quot;</value>
                   <value>&quot;Ethiopia&quot;</value>
@@ -3157,6 +3291,7 @@
                   <value>&quot;Ghana&quot;</value>
                   <value>&quot;Greece&quot;</value>
                   <value>&quot;Greenland&quot;</value>
+                  <value>&quot;Grenada&quot;</value>
                   <value>&quot;Guadeloupe&quot;</value>
                   <value>&quot;Guam&quot;</value>
                   <value>&quot;Guatemala&quot;</value>
@@ -3205,6 +3340,7 @@
                   <value>&quot;Mongolia&quot;</value>
                   <value>&quot;Montenegro&quot;</value>
                   <value>&quot;Morocco&quot;</value>
+                  <value>&quot;Mozambique&quot;</value>
                   <value>&quot;Namibia&quot;</value>
                   <value>&quot;Nepal&quot;</value>
                   <value>&quot;Netherlands&quot;</value>
@@ -3249,15 +3385,18 @@
                   <value>&quot;Suriname&quot;</value>
                   <value>&quot;Sweden&quot;</value>
                   <value>&quot;Switzerland&quot;</value>
+                  <value>&quot;Syria&quot;</value>
                   <value>&quot;Taiwan*&quot;</value>
                   <value>&quot;Tanzania&quot;</value>
                   <value>&quot;Thailand&quot;</value>
                   <value>&quot;The Bahamas&quot;</value>
                   <value>&quot;The Gambia&quot;</value>
+                  <value>&quot;Timor-Leste&quot;</value>
                   <value>&quot;Togo&quot;</value>
                   <value>&quot;Trinidad and Tobago&quot;</value>
                   <value>&quot;Tunisia&quot;</value>
                   <value>&quot;Turkey&quot;</value>
+                  <value>&quot;Uganda&quot;</value>
                   <value>&quot;Ukraine&quot;</value>
                   <value>&quot;United Arab Emirates&quot;</value>
                   <value>&quot;United Kingdom&quot;</value>
@@ -3531,10 +3670,12 @@
                   <value>&quot; Czechy&quot;</value>
                   <value>&quot; Dania&quot;</value>
                   <value>&quot; Demokratyczna Republika Konga&quot;</value>
+                  <value>&quot; Dominika&quot;</value>
                   <value>&quot; Dominikana&quot;</value>
                   <value>&quot; Dżibuti&quot;</value>
                   <value>&quot; Egipt&quot;</value>
                   <value>&quot; Ekwador&quot;</value>
+                  <value>&quot; Erytrea&quot;</value>
                   <value>&quot; Estonia&quot;</value>
                   <value>&quot; Etiopia&quot;</value>
                   <value>&quot; Fidżi&quot;</value>
@@ -3545,6 +3686,7 @@
                   <value>&quot; Gambia&quot;</value>
                   <value>&quot; Ghana&quot;</value>
                   <value>&quot; Grecja&quot;</value>
+                  <value>&quot; Grenada&quot;</value>
                   <value>&quot; Gruzja&quot;</value>
                   <value>&quot; Gujana&quot;</value>
                   <value>&quot; Gwatemala&quot;</value>
@@ -3595,6 +3737,7 @@
                   <value>&quot; Mołdawia&quot;</value>
                   <value>&quot; Monako&quot;</value>
                   <value>&quot; Mongolia&quot;</value>
+                  <value>&quot; Mozambik&quot;</value>
                   <value>&quot; Namibia&quot;</value>
                   <value>&quot; Nepal&quot;</value>
                   <value>&quot; Niemcy&quot;</value>
@@ -3613,6 +3756,7 @@
                   <value>&quot; Południowa Afryka&quot;</value>
                   <value>&quot; Portugalia&quot;</value>
                   <value>&quot; Republika Środkowoafrykańska&quot;</value>
+                  <value>&quot; Republika Zielonego Przylądka&quot;</value>
                   <value>&quot; Rosja&quot;</value>
                   <value>&quot; Rumunia&quot;</value>
                   <value>&quot; Rwanda&quot;</value>
@@ -3631,14 +3775,17 @@
                   <value>&quot; Stany Zjednoczone&quot;</value>
                   <value>&quot; Sudan&quot;</value>
                   <value>&quot; Surinam&quot;</value>
+                  <value>&quot; Syria&quot;</value>
                   <value>&quot; Szwajcaria&quot;</value>
                   <value>&quot; Szwecja&quot;</value>
                   <value>&quot; Tajlandia&quot;</value>
                   <value>&quot; Tanzania&quot;</value>
+                  <value>&quot; Timor Wschodni&quot;</value>
                   <value>&quot; Togo&quot;</value>
                   <value>&quot; Trynidad i Tobago&quot;</value>
                   <value>&quot; Tunezja&quot;</value>
                   <value>&quot; Turcja&quot;</value>
+                  <value>&quot; Uganda&quot;</value>
                   <value>&quot; Ukraina&quot;</value>
                   <value>&quot; Urugwaj&quot;</value>
                   <value>&quot; Uzbekistan&quot;</value>
@@ -3711,6 +3858,7 @@
                   <value>&quot;Cambodia&quot;</value>
                   <value>&quot;Cameroon&quot;</value>
                   <value>&quot;Canada&quot;</value>
+                  <value>&quot;Cape Verde&quot;</value>
                   <value>&quot;Cayman Islands&quot;</value>
                   <value>&quot;Central African Republic&quot;</value>
                   <value>&quot;Chad&quot;</value>
@@ -3728,11 +3876,14 @@
                   <value>&quot;Czechia&quot;</value>
                   <value>&quot;Denmark&quot;</value>
                   <value>&quot;Djibouti&quot;</value>
+                  <value>&quot;Dominica&quot;</value>
                   <value>&quot;Dominican Republic&quot;</value>
+                  <value>&quot;East Timor&quot;</value>
                   <value>&quot;Ecuador&quot;</value>
                   <value>&quot;Egypt&quot;</value>
                   <value>&quot;El Salvador&quot;</value>
                   <value>&quot;Equatorial Guinea&quot;</value>
+                  <value>&quot;Eritrea&quot;</value>
                   <value>&quot;Estonia&quot;</value>
                   <value>&quot;Eswatini&quot;</value>
                   <value>&quot;Ethiopia&quot;</value>
@@ -3747,6 +3898,7 @@
                   <value>&quot;Ghana&quot;</value>
                   <value>&quot;Greece&quot;</value>
                   <value>&quot;Greenland&quot;</value>
+                  <value>&quot;Grenada&quot;</value>
                   <value>&quot;Guadeloupe&quot;</value>
                   <value>&quot;Guam&quot;</value>
                   <value>&quot;Guatemala&quot;</value>
@@ -3795,6 +3947,7 @@
                   <value>&quot;Mongolia&quot;</value>
                   <value>&quot;Montenegro&quot;</value>
                   <value>&quot;Morocco&quot;</value>
+                  <value>&quot;Mozambique&quot;</value>
                   <value>&quot;Namibia&quot;</value>
                   <value>&quot;Nepal&quot;</value>
                   <value>&quot;Netherlands&quot;</value>
@@ -3839,15 +3992,18 @@
                   <value>&quot;Suriname&quot;</value>
                   <value>&quot;Sweden&quot;</value>
                   <value>&quot;Switzerland&quot;</value>
+                  <value>&quot;Syria&quot;</value>
                   <value>&quot;Taiwan*&quot;</value>
                   <value>&quot;Tanzania&quot;</value>
                   <value>&quot;Thailand&quot;</value>
                   <value>&quot;The Bahamas&quot;</value>
                   <value>&quot;The Gambia&quot;</value>
+                  <value>&quot;Timor-Leste&quot;</value>
                   <value>&quot;Togo&quot;</value>
                   <value>&quot;Trinidad and Tobago&quot;</value>
                   <value>&quot;Tunisia&quot;</value>
                   <value>&quot;Turkey&quot;</value>
+                  <value>&quot;Uganda&quot;</value>
                   <value>&quot;Ukraine&quot;</value>
                   <value>&quot;United Arab Emirates&quot;</value>
                   <value>&quot;United Kingdom&quot;</value>
@@ -7072,6 +7228,11 @@
               <bucket>&quot; Szwajcaria&quot;</bucket>
               <bucket>&quot; Włochy&quot;</bucket>
               <bucket>%all%</bucket>
+              <bucket>&quot; Chiny&quot;</bucket>
+              <bucket>&quot; Holandia&quot;</bucket>
+              <bucket>&quot; Iran&quot;</bucket>
+              <bucket>&quot; Korea Południowa&quot;</bucket>
+              <bucket>&quot; Wielka Brytania&quot;</bucket>
             </dictionary>
           </manual-sort>
           <filter class='quantitative' column='[federated.04q75kt1m8wglk1czomo715umt7a].[none:OrderNumber_Deaths:qk]' included-values='in-range'>
@@ -7478,7 +7639,7 @@
             </dictionary>
           </manual-sort>
           <filter class='categorical' column='[federated.04q75kt1m8wglk1czomo715umt7a].[none:Country_PL:nk]' filter-group='5'>
-            <groupfilter function='member' level='[none:Country_PL:nk]' member='&quot; Włochy&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='member' level='[none:Country_PL:nk]' member='&quot; Wielka Brytania&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[federated.04q75kt1m8wglk1czomo715umt7a].[:Measure Names]</column>
@@ -7835,6 +7996,408 @@
         <forecast-specification auto-forecast-agg='true' band-confidence-level='95.000000' enabled='false' fill-type='fill-missing' ignore-last='0' model-type='auto-season' range-type='auto' show-prediction-bands='true' />
       </table>
       <simple-id uuid='{778231CA-D07B-4987-BB00-ED5C58D44041}' />
+    </worksheet>
+    <worksheet name='Timeline_kraj (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Śmiertelność na osi czasu </run>
+            <run fontsize='10'>- z podziałem na kraje </run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#666666' fontsize='8'>Korzystając z filtrów po prawej stronie, możesz wyświetlić dane dla poszczególnych krajów.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (AllData)' name='federated.04q75kt1m8wglk1czomo715umt7a' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.04q75kt1m8wglk1czomo715umt7a'>
+            <column caption='SUM([Deaths])/SUM([Confirmed])' datatype='real' name='[Calculation_1329406346707210247]' role='measure' type='quantitative' user:unnamed='Timeline_kraj (2)'>
+              <calculation class='tableau' formula='SUM([Deaths])/SUM([Confirmed])' />
+            </column>
+            <column datatype='integer' name='[Confirmed]' role='measure' type='quantitative' />
+            <column aggregation='None' datatype='string' name='[Country_PL]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='date' datatype-customized='true' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Deaths]' role='measure' type='quantitative' />
+            <column-instance column='[Country_PL]' derivation='None' name='[none:Country_PL:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Confirmed]' derivation='Sum' name='[sum:Confirmed:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Day-Trunc' name='[tdy:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1329406346707210247]' derivation='User' name='[usr:Calculation_1329406346707210247:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.04q75kt1m8wglk1czomo715umt7a].[none:Country_PL:nk]' filter-group='5'>
+            <groupfilter function='member' level='[none:Country_PL:nk]' member='&quot; Wielka Brytania&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.04q75kt1m8wglk1czomo715umt7a].[none:Country_PL:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.04q75kt1m8wglk1czomo715umt7a].[tdy:Date:qk]' scope='cols' value='' />
+            <format attr='title' class='0' field='[federated.04q75kt1m8wglk1czomo715umt7a].[usr:Calculation_1329406346707210247:qk]' scope='rows' value='Śmiertelność (zgony/potwierdzone zakażenia) [%]' />
+            <format attr='tick-color' scope='cols' value='#000000' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+            <format attr='stroke-size' value='1' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='title' class='0' field='[federated.04q75kt1m8wglk1czomo715umt7a].[sum:Confirmed:qk]' scope='rows' value='Liczba przypadków' />
+            <format attr='width' field='[federated.04q75kt1m8wglk1czomo715umt7a].[usr:Calculation_1329406346707210247:qk]' value='116' />
+            <format attr='width' field='[federated.04q75kt1m8wglk1czomo715umt7a].[sum:Confirmed:qk]' value='116' />
+            <format attr='auto-subtitle' class='0' field='[federated.04q75kt1m8wglk1czomo715umt7a].[usr:Calculation_1329406346707210247:qk]' scope='rows' value='false' />
+            <format attr='subtitle' class='0' field='[federated.04q75kt1m8wglk1czomo715umt7a].[usr:Calculation_1329406346707210247:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.04q75kt1m8wglk1czomo715umt7a].[usr:Calculation_1329406346707210247:qk]' value='p0.0%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.04q75kt1m8wglk1czomo715umt7a].[tdy:Date:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.04q75kt1m8wglk1czomo715umt7a].[tdy:Date:qk]' value='bold' />
+            <format attr='font-size' field='[federated.04q75kt1m8wglk1czomo715umt7a].[tdy:Date:qk]' value='10' />
+            <format attr='text-format' field='[federated.04q75kt1m8wglk1czomo715umt7a].[usr:Calculation_1329406346707210247:qk]' value='p0.0%' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-color' data-class='total' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='stroke-color' scope='cols' value='#ffffff4b' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='fill-color' id='annotation_3' value='#ffffffe6' />
+            <format attr='fill-color' id='annotation_4' value='#ffffffe6' />
+            <format attr='line-end' id='annotation_2' value='dot' />
+            <format attr='stroke-color' id='annotation_2' value='#000000' />
+            <format attr='line-end' id='annotation_0' value='dot' />
+            <format attr='stroke-color' id='annotation_0' value='#000000' />
+            <format attr='line-end' id='annotation_4' value='dot' />
+            <format attr='stroke-color' id='annotation_4' value='#000000' />
+            <format attr='stroke-color' id='annotation_3' value='#000000' />
+            <format attr='line-end' id='annotation_3' value='dot' />
+            <format attr='stroke-color' id='annotation_1' value='#000000' />
+            <format attr='line-end' id='annotation_1' value='dot' />
+            <format attr='fill-color' id='annotation_5' value='#ffffffe6' />
+            <format attr='stroke-color' id='annotation_5' value='#000000' />
+            <format attr='line-end' id='annotation_5' value='dot' />
+            <format attr='fill-color' id='annotation_6' value='#ffffffe6' />
+            <format attr='stroke-color' id='annotation_6' value='#000000' />
+            <format attr='line-end' id='annotation_6' value='dot' />
+            <format attr='rounding' id='annotation_6' value='small' />
+            <format attr='rounding' id='annotation_5' value='small' />
+            <format attr='border-width' id='annotation_6' value='0' />
+            <format attr='border-style' id='annotation_6' value='none' />
+            <format attr='border-width' id='annotation_5' value='0' />
+            <format attr='border-style' id='annotation_5' value='none' />
+            <format attr='fill-color' id='annotation_0' value='#00000000' />
+            <format attr='fill-color' id='annotation_2' value='#00000000' />
+            <format attr='fill-color' id='annotation_1' value='#00000000' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.04q75kt1m8wglk1czomo715umt7a].[none:Country_PL:nk]' value='Wybierz kraj/region' />
+            <format attr='font-weight' value='normal' />
+            <format attr='color' value='#000000' />
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='8'>&lt;[federated.04q75kt1m8wglk1czomo715umt7a].[tdy:Date:qk]&gt;</run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run fontalignment='1' fontcolor='#000000' fontsize='8'>&lt;[federated.04q75kt1m8wglk1czomo715umt7a].[:Measure Names]&gt;: </run>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='8'>&lt;[federated.04q75kt1m8wglk1czomo715umt7a].[Multiple Values]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='left' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-family' value='Tableau Bold' />
+                <format attr='font-size' value='10' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-line-first' value='false' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.04q75kt1m8wglk1czomo715umt7a].[usr:Calculation_1329406346707210247:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.04q75kt1m8wglk1czomo715umt7a].[usr:Calculation_1329406346707210247:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='8'>&lt;[federated.04q75kt1m8wglk1czomo715umt7a].[tdy:Date:qk]&gt;</run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run fontalignment='1' fontcolor='#000000' fontsize='8'>&lt;[federated.04q75kt1m8wglk1czomo715umt7a].[:Measure Names]&gt;: </run>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='8'>&lt;[federated.04q75kt1m8wglk1czomo715umt7a].[Multiple Values]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='left' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-family' value='Tableau Bold' />
+                <format attr='font-size' value='10' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-line-first' value='false' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.04q75kt1m8wglk1czomo715umt7a].[sum:Confirmed:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.04q75kt1m8wglk1czomo715umt7a].[sum:Confirmed:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='8'>&lt;[federated.04q75kt1m8wglk1czomo715umt7a].[tdy:Date:qk]&gt;</run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run fontalignment='1' fontcolor='#000000' fontsize='8'>&lt;[federated.04q75kt1m8wglk1czomo715umt7a].[:Measure Names]&gt;: </run>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='8'>&lt;[federated.04q75kt1m8wglk1czomo715umt7a].[Multiple Values]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='left' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-family' value='Tableau Bold' />
+                <format attr='font-size' value='10' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-line-first' value='false' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.04q75kt1m8wglk1czomo715umt7a].[usr:Calculation_1329406346707210247:qk] + [federated.04q75kt1m8wglk1czomo715umt7a].[sum:Confirmed:qk])</rows>
+        <cols>[federated.04q75kt1m8wglk1czomo715umt7a].[tdy:Date:qk]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='12' text-width='150'>
+            <formatted-text>
+              <run bold='true' fontsize='8'>4.03.2020:</run>
+              <run>Æ&#10;</run>
+              <run fontsize='8'>Pierwszy przypadek w Polsce</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.04q75kt1m8wglk1czomo715umt7a].[tdy:Date:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.04q75kt1m8wglk1czomo715umt7a].[Multiple Values]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.04q75kt1m8wglk1czomo715umt7a].[tdy:Date:qk]</field>
+                      <field>[federated.04q75kt1m8wglk1czomo715umt7a].[:Measure Names]</field>
+                      <field>[federated.04q75kt1m8wglk1czomo715umt7a].[Multiple Values]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>#2020-03-04 00:00:00#</value>
+                    <value>&quot;[federated.04q75kt1m8wglk1czomo715umt7a].[sum:Confirmed:qk]&quot;</value>
+                    <value>95120.0</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-47' y='-88' />
+          </annotation>
+          <annotation class='point' id='1' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontsize='8'>24.01.2020:</run>
+              <run>Æ&#10;</run>
+              <run fontsize='8'>Pierwsze przypadki </run>
+              <run>Æ&#10;</run>
+              <run fontsize='8'>w Europie (Francja)</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.04q75kt1m8wglk1czomo715umt7a].[tdy:Date:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.04q75kt1m8wglk1czomo715umt7a].[Multiple Values]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.04q75kt1m8wglk1czomo715umt7a].[tdy:Date:qk]</field>
+                      <field>[federated.04q75kt1m8wglk1czomo715umt7a].[:Measure Names]</field>
+                      <field>[federated.04q75kt1m8wglk1czomo715umt7a].[Multiple Values]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>#2020-01-24 00:00:00#</value>
+                    <value>&quot;[federated.04q75kt1m8wglk1czomo715umt7a].[sum:Confirmed:qk]&quot;</value>
+                    <value>941.0</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='14' y='-63' />
+          </annotation>
+          <annotation class='point' id='2' mark-position='1' pullback='12' text-width='139'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontsize='8'>21.02.2020:</run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run fontalignment='1' fontsize='8'>Pierwsze wykryte przypadki we Włoszech</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.04q75kt1m8wglk1czomo715umt7a].[tdy:Date:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.04q75kt1m8wglk1czomo715umt7a].[Multiple Values]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.04q75kt1m8wglk1czomo715umt7a].[tdy:Date:qk]</field>
+                      <field>[federated.04q75kt1m8wglk1czomo715umt7a].[:Measure Names]</field>
+                      <field>[federated.04q75kt1m8wglk1czomo715umt7a].[Multiple Values]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>#2020-02-21 00:00:00#</value>
+                    <value>&quot;[federated.04q75kt1m8wglk1czomo715umt7a].[sum:Confirmed:qk]&quot;</value>
+                    <value>76823.0</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-40' y='-68' />
+          </annotation>
+          <annotation class='point' id='3' mark-position='1' pullback='12' text-width='151'>
+            <formatted-text>
+              <run fontalignment='1' fontcolor='#000000' fontsize='8'>11.03.2020:</run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run fontalignment='1' fontcolor='#000000' fontsize='8'>dyrektor generalny WHO określił rozwój choroby jako „pandemię”</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.04q75kt1m8wglk1czomo715umt7a].[tdy:Date:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.04q75kt1m8wglk1czomo715umt7a].[Multiple Values]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.04q75kt1m8wglk1czomo715umt7a].[tdy:Date:qk]</field>
+                      <field>[federated.04q75kt1m8wglk1czomo715umt7a].[:Measure Names]</field>
+                      <field>[federated.04q75kt1m8wglk1czomo715umt7a].[Multiple Values]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>#2020-03-11 00:00:00#</value>
+                    <value>&quot;[federated.04q75kt1m8wglk1czomo715umt7a].[sum:Confirmed:qk]&quot;</value>
+                    <value>125865.0</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-138' y='-52' />
+          </annotation>
+        </annotations>
+        <page-trail-options enabled='true' mark-type='all' />
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='95.000000' enabled='false' fill-type='fill-missing' ignore-last='0' model-type='auto-season' range-type='auto' show-prediction-bands='true' />
+      </table>
+      <simple-id uuid='{19AF672F-99CE-47D3-BC8B-03BCB873A3C0}' />
     </worksheet>
     <worksheet name='Top10Countries'>
       <layout-options>
@@ -8239,8 +8802,8 @@
           </layout-options>
           <size maxheight='1300' minheight='1300' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='187' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97916' id='186' param='vert' type='layout-flow' w='98438' x='781' y='1042'>
+            <zone h='100000' id='201' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='200' param='vert' type='layout-flow' w='98438' x='781' y='1042'>
                 <zone h='5599' id='27' type='title' w='98438' x='781' y='1042'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -8436,8 +8999,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='158' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97916' id='157' param='vert' type='layout-flow' w='98438' x='781' y='1042'>
+            <zone h='100000' id='172' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='171' param='vert' type='layout-flow' w='98438' x='781' y='1042'>
                 <zone fixed-size='280' h='97916' id='3' is-fixed='true' name='Top10Countries' w='77735' x='781' y='1042'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -8602,8 +9165,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='900' minheight='900' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='50' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='49' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='64' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='63' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
                 <zone h='10250' id='8' mode='checkdropdown' name='Timeline_OrderConf' param='[federated.04q75kt1m8wglk1czomo715umt7a].[none:Country_PL:nk]' show-morefewerbutton='true' type='filter' w='20100' x='79100' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -8751,8 +9314,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='750' minheight='750' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='181' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97916' id='180' param='vert' type='layout-flow' w='98438' x='781' y='1042'>
+            <zone h='100000' id='195' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='194' param='vert' type='layout-flow' w='98438' x='781' y='1042'>
                 <zone h='28646' id='19' mode='dropdown' name='Timeline' param='[federated.04q75kt1m8wglk1czomo715umt7a].[none:Continent:nk]' type='filter' values='database' w='28320' x='70899' y='1042'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -8882,8 +9445,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='191' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97916' id='190' param='vert' type='layout-flow' w='98438' x='781' y='1042'>
+            <zone h='100000' id='205' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='204' param='vert' type='layout-flow' w='98438' x='781' y='1042'>
                 <zone fixed-size='134' h='18452' id='21' is-fixed='true' name='Summary' w='98438' x='781' y='1042'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -8984,8 +9547,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='155' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97916' id='154' param='vert' type='layout-flow' w='98438' x='781' y='1042'>
+            <zone h='100000' id='169' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='168' param='vert' type='layout-flow' w='98438' x='781' y='1042'>
                 <zone fixed-size='280' h='97916' id='3' is-fixed='true' name='Table' w='98438' x='781' y='1042'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -9038,8 +9601,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='39' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97916' id='38' param='vert' type='layout-flow' w='98438' x='781' y='1042'>
+            <zone h='100000' id='53' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='52' param='vert' type='layout-flow' w='98438' x='781' y='1042'>
                 <zone fixed-size='280' h='97916' id='1' is-fixed='true' name='Table (2)' w='98438' x='781' y='1042'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -9141,8 +9704,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='193' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97916' id='192' param='vert' type='layout-flow' w='98438' x='781' y='1042'>
+            <zone h='100000' id='207' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='206' param='vert' type='layout-flow' w='98438' x='781' y='1042'>
                 <zone fixed-size='75' h='10808' id='96' mode='dropdown' name='Timeline_kraj' param='[federated.04q75kt1m8wglk1czomo715umt7a].[none:Country_PL:nk]' type='filter' w='30078' x='69141' y='1042'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -9280,8 +9843,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='950' minheight='950' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='196' type='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97916' id='195' param='vert' type='layout-flow' w='98438' x='781' y='1042'>
+            <zone h='100000' id='210' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='209' param='vert' type='layout-flow' w='98438' x='781' y='1042'>
                 <zone fixed-size='75' h='10808' id='96' mode='dropdown' name='Timeline_kraj' param='[federated.04q75kt1m8wglk1czomo715umt7a].[none:Country_PL:nk]' type='filter' w='30078' x='69141' y='1042'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -9633,7 +10196,7 @@
             <zone h='95158' id='1' param='vert' removable='false' type='layout-flow' w='98692' x='654' y='4000'>
               <zone fixed-size='100' h='10526' id='4' is-fixed='true' paired-zone-id='5' removable='false' type='flipboard-nav' w='98692' x='654' y='4000' />
               <zone h='84632' id='5' paired-zone-id='4' removable='false' type='flipboard' w='98692' x='654' y='14526'>
-                <flipboard active-id='6' nav-type='caption' show-nav-arrows='true'>
+                <flipboard active-id='7' nav-type='caption' show-nav-arrows='true'>
                   <story-points>
                     <story-point caption='Intro' captured-sheet='Intro' id='7'>
                       <capturedDeltas>
@@ -9654,6 +10217,9 @@
                             </formatted-text>
                           </zone>
                         </dashboard>
+                        <worksheet name='Intro_Title'>
+                          <selection-collection />
+                        </worksheet>
                       </capturedDeltas>
                     </story-point>
                     <story-point caption='Mapa świata' captured-sheet='D_map' id='10'>
@@ -9667,21 +10233,21 @@
                           </style>
                           <current-page>
                             <multibucket>
-                              <bucket>#2020-03-20 00:00:00#</bucket>
+                              <bucket>#2020-03-23 00:00:00#</bucket>
                             </multibucket>
                           </current-page>
                         </worksheet>
                         <worksheet name='Summary'>
                           <current-page>
                             <multibucket>
-                              <bucket>#2020-03-20 00:00:00#</bucket>
+                              <bucket>#2020-03-23 00:00:00#</bucket>
                             </multibucket>
                           </current-page>
                         </worksheet>
                         <worksheet name='Summary_%'>
                           <current-page>
                             <multibucket>
-                              <bucket>#2020-03-20 00:00:00#</bucket>
+                              <bucket>#2020-03-23 00:00:00#</bucket>
                             </multibucket>
                           </current-page>
                         </worksheet>
@@ -9691,7 +10257,6 @@
                       <capturedDeltas>
                         <worksheet name='Timeline'>
                           <datasource-dependencies datasource='federated.04q75kt1m8wglk1czomo715umt7a'>
-                            <column aggregation='None' datatype='string' name='[Country/Region]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
                             <column-instance column='[Country/Region]' derivation='None' name='[none:Country/Region:nk]' pivot='key' type='nominal' />
                           </datasource-dependencies>
                           <filter class='categorical' column='[federated.04q75kt1m8wglk1czomo715umt7a].[none:Country/Region:nk]'>
@@ -9774,7 +10339,15 @@
                     </story-point>
                     <story-point caption='Kraje: liczba zachorowań' captured-sheet='D_time_kraje_all' id='11'>
                       <capturedDeltas>
+                        <worksheet name='Bar_kraje'>
+                          <filter class='categorical' column='[federated.04q75kt1m8wglk1czomo715umt7a].[none:Country_PL:nk]'>
+                            <groupfilter function='member' level='[none:Country_PL:nk]' member='&quot; Włochy&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                          </filter>
+                        </worksheet>
                         <worksheet name='Timeline_kraj'>
+                          <filter class='categorical' column='[federated.04q75kt1m8wglk1czomo715umt7a].[none:Country_PL:nk]'>
+                            <groupfilter function='member' level='[none:Country_PL:nk]' member='&quot; Włochy&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                          </filter>
                           <annotations>
                             <annotation class='point' delta-type='edited' id='1' mark-position='1' pullback='12' text-width='180'>
                               <formatted-text>
@@ -9850,7 +10423,52 @@
                         </worksheet>
                       </capturedDeltas>
                     </story-point>
-                    <story-point caption='Kraje: przekroczenie masy kryt. (150 zak.)' captured-sheet='D_day0' id='12' />
+                    <story-point caption='Kraje: przekroczenie masy kryt. (150 zak.)' captured-sheet='D_day0' id='12'>
+                      <capturedDeltas>
+                        <worksheet name='Timeline_OrderDeaths'>
+                          <annotations>
+                            <annotation class='point' delta-type='edited' id='0' mark-position='1' pullback='12.0416' text-width='143'>
+                              <formatted-text>
+                                <run bold='true' fontalignment='1' fontsize='6'>Tempo wzrostu zgonów we Włoszech wyprzedziło tempo w Chinach</run>
+                              </formatted-text>
+                              <point>
+                                <visual-coordinate class='mark'>
+                                  <tuple-reference>
+                                    <tuple-descriptor>
+                                      <pane-descriptor>
+                                        <x-fields>
+                                          <field>[federated.04q75kt1m8wglk1czomo715umt7a].[none:OrderNumber_Deaths:qk]</field>
+                                        </x-fields>
+                                        <y-fields>
+                                          <field>[federated.04q75kt1m8wglk1czomo715umt7a].[sum:Deaths:qk]</field>
+                                        </y-fields>
+                                      </pane-descriptor>
+                                      <columns>
+                                        <field>[federated.04q75kt1m8wglk1czomo715umt7a].[none:Country_PL:nk]</field>
+                                        <field>[federated.04q75kt1m8wglk1czomo715umt7a].[none:OrderNumber_Deaths:qk]</field>
+                                        <field>[federated.04q75kt1m8wglk1czomo715umt7a].[sum:Confirmed:qk]</field>
+                                        <field>[federated.04q75kt1m8wglk1czomo715umt7a].[sum:Deaths:qk]</field>
+                                        <field>[federated.04q75kt1m8wglk1czomo715umt7a].[attr:Country_PL:nk]</field>
+                                        <field>[federated.04q75kt1m8wglk1czomo715umt7a].[attr:OrderNumber_Confirmed:qk]</field>
+                                      </columns>
+                                    </tuple-descriptor>
+                                    <tuple>
+                                      <value>&quot; Włochy&quot;</value>
+                                      <value>21</value>
+                                      <value>21157</value>
+                                      <value>1441</value>
+                                      <value>&quot; Włochy&quot;</value>
+                                      <value>22</value>
+                                    </tuple>
+                                  </tuple-reference>
+                                </visual-coordinate>
+                              </point>
+                              <body x='179' y='103' />
+                            </annotation>
+                          </annotations>
+                        </worksheet>
+                      </capturedDeltas>
+                    </story-point>
                     <story-point caption='Liczba przypadków na   1 mln mieszkańców' captured-sheet='D_Top10' id='9' />
                     <story-point caption='Chiny vs. reszta świata' captured-sheet='D_Chiny_reszta' id='6'>
                       <capturedDeltas>
@@ -9868,6 +10486,7 @@
                               <format attr='stroke-color' id='annotation_5' value='#000000' />
                             </style-rule>
                           </style>
+                          <selection-collection />
                         </worksheet>
                       </capturedDeltas>
                     </story-point>
@@ -9894,9 +10513,9 @@
         <edge name='left'>
           <strip size='160'>
             <card type='pages' />
-            <card size='6' type='filters' />
-            <card size='20' type='marks' />
-            <card size='7' type='measures' />
+            <card size='2' type='filters' />
+            <card size='9' type='marks' />
+            <card size='3' type='measures' />
           </strip>
         </edge>
         <edge name='top'>
@@ -9919,7 +10538,7 @@
       </cards>
       <simple-id uuid='{5EAF465F-E94A-4AB6-8244-4F76A06C41FD}' />
     </window>
-    <window class='worksheet' name='Timeline_kraj'>
+    <window class='worksheet' maximized='true' name='Timeline_kraj'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -9949,13 +10568,41 @@
       </cards>
       <simple-id uuid='{CD737822-56D6-4A5D-8986-8459294E2056}' />
     </window>
+    <window class='worksheet' name='Timeline_kraj (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.04q75kt1m8wglk1czomo715umt7a].[none:Country_PL:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{457D041F-EA5D-4D2A-8D0D-5EFBCE7BE0F7}' />
+    </window>
     <window class='worksheet' name='Timeline_OrderConf'>
       <cards>
         <edge name='left'>
           <strip size='160'>
             <card type='pages' />
-            <card size='1' type='filters' />
-            <card size='7' type='marks' />
+            <card type='filters' />
+            <card size='3' type='marks' />
           </strip>
         </edge>
         <edge name='top'>
@@ -9983,8 +10630,8 @@
         <edge name='left'>
           <strip size='160'>
             <card type='pages' />
-            <card size='1' type='filters' />
-            <card size='7' type='marks' />
+            <card type='filters' />
+            <card size='3' type='marks' />
           </strip>
         </edge>
         <edge name='top'>
@@ -10012,8 +10659,8 @@
         <edge name='left'>
           <strip size='160'>
             <card type='pages' />
-            <card size='4' type='filters' />
-            <card size='16' type='marks' />
+            <card type='filters' />
+            <card size='5' type='marks' />
           </strip>
         </edge>
         <edge name='top'>
@@ -10058,7 +10705,7 @@
       </cards>
       <simple-id uuid='{810A3C7D-5308-49A3-8D0D-52EE21775C0A}' />
     </window>
-    <window class='worksheet' maximized='true' name='Chiny_vs_reszta (2)'>
+    <window class='worksheet' name='Chiny_vs_reszta (2)'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -10077,9 +10724,9 @@
         </edge>
         <edge name='right'>
           <strip size='160'>
-            <card mode='compact' param='[Parameters].[Parameter 1]' size='9' type='parameter' />
-            <card pane-specification-id='6' param='[federated.04q75kt1m8wglk1czomo715umt7a].[Country/Region (group)]' size='8' type='color' />
-            <card pane-specification-id='5' param='[federated.04q75kt1m8wglk1czomo715umt7a].[Chiny_plus_reszta]' size='8' type='color' />
+            <card mode='compact' param='[Parameters].[Parameter 1]' size='5' type='parameter' />
+            <card pane-specification-id='6' param='[federated.04q75kt1m8wglk1czomo715umt7a].[Country/Region (group)]' size='4' type='color' />
+            <card pane-specification-id='5' param='[federated.04q75kt1m8wglk1czomo715umt7a].[Chiny_plus_reszta]' size='4' type='color' />
           </strip>
         </edge>
       </cards>
@@ -10219,9 +10866,9 @@
         <edge name='left'>
           <strip size='160'>
             <card type='pages' />
-            <card size='6' type='filters' />
-            <card size='15' type='marks' />
-            <card size='7' type='measures' />
+            <card size='2' type='filters' />
+            <card size='7' type='marks' />
+            <card size='3' type='measures' />
           </strip>
         </edge>
         <edge name='top'>
@@ -10605,7 +11252,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='9' />
+      <active id='-1' />
       <simple-id uuid='{0F45E307-C801-4850-B990-1FF4188C6CB3}' />
     </window>
     <window class='dashboard' name='D_kontynenty_time_all'>
@@ -10662,7 +11309,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='56' />
+      <active id='16' />
       <simple-id uuid='{4FCF4AB2-E137-45BA-B5D0-35138D859C88}' />
     </window>
     <window class='dashboard' name='Intro'>
@@ -10677,7 +11324,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='7' />
+      <active id='-1' />
       <device-preview mobileapp-chrome-visible='false' visible='true' />
       <simple-id uuid='{958A668E-6AA1-4DF3-94F8-1BE2C05FC744}' />
     </window>
@@ -10687,7 +11334,7 @@
           <zoom type='fit-width' />
         </viewpoint>
       </viewpoints>
-      <active id='3' />
+      <active id='-1' />
       <simple-id uuid='{F55E4C9F-235E-4D16-AF05-04765F940553}' />
     </window>
     <window class='dashboard' name='D_Top10'>
@@ -10708,7 +11355,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='44' />
+      <active id='-1' />
       <simple-id uuid='{5421B7B8-59EE-43E7-A0BC-319573AE3D6B}' />
     </window>
     <window class='dashboard' name='D_table (2)'>
