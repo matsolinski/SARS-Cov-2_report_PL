@@ -20,11 +20,60 @@ from plotly.subplots import make_subplots
 plt.rcParams['figure.figsize'] = [15, 5]
 from IPython import display
 from ipywidgets import interact, widgets
+from datetime import datetime
+import xlrd
+# CURRENT AND YESTERDAY DATE AND TIME
+now = datetime.now()
+date_time_trailer = now.strftime("%Y_%m_%d")
 
+# DEFINES COUNTRY NAMES FIXES DICTIONARY
+countries_fixes_dict_CSSE = {'West Bank and Gaza': 'Palestine'}
+                        
 ## Read Data for Cases, Deaths and Recoveries
+# ConfirmedCases_raw=pd.read_csv('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv')
+# Deaths_raw=pd.read_csv('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv')
+#Recoveries_raw=pd.read_csv('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Recovered.csv')
+
+#WCZYTYWANIE TYLKO DANYCH Z OSTATNIEGO DNIA
+
 ConfirmedCases_raw=pd.read_csv('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv')
 Deaths_raw=pd.read_csv('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv')
-Recoveries_raw=pd.read_csv('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Recovered.csv')
+Recoveries_raw=pd.read_csv('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv')
+
+#zamiana nazw krajow
+ConfirmedCases_raw['Country/Region'] = ConfirmedCases_raw['Country/Region'].replace({'West Bank and Gaza': 'Palestine'})
+Deaths_raw['Country/Region'] = Deaths_raw['Country/Region'].replace({'West Bank and Gaza': 'Palestine'})
+Recoveries_raw['Country/Region'] = Recoveries_raw['Country/Region'].replace({'West Bank and Gaza': 'Palestine'})
+
+
+##### TU JEST SEKCJA LACZENIA Z WORLDOMETER - BYC MOZE JESZCZE BEDZIE POTRZEBNA....
+
+##dodawanie wczorajszego recovery z worldometer
+#Recoveries_raw = pd.merge(Recoveries_raw, worldometer_recovered_DF, left_on='Country/Region', right_on='Country/Region', how='inner')
+
+# Recoveries_raw_last_day = Recoveries_raw.iloc[:,-1]
+# Deaths_raw_last_day = Recoveries_raw.iloc[:,-1]
+# ConfirmedCases_raw_last_day = Recoveries_raw.iloc[:,-1]
+    
+#######wyznaczanie branie ostatniej kolumny
+# Recoveries_raw = pd.read_excel (r'Recoveries_raw_backup.xlsx')
+# Deaths_raw = pd.read_excel (r'Deaths_raw_backup.xlsx')
+# ConfirmedCases_raw = pd.read_excel (r'ConfirmedCases_raw_backup.xlsx')
+
+# Recoveries_raw.to_excel(r'./Recoveries_raw_backup.xlsx', index = True)
+# Deaths_raw.to_excel(r'./Deaths_raw_backup.xlsx', index = True)
+# ConfirmedCases_raw.to_excel(r'./ConfirmedCases_raw_backup.xlsx', index = True)
+
+# Recoveries_raw.to_excel(r'./backup_data/Recoveries_raw_backup' + date_time_trailer +  '.xlsx', index = True)
+# Deaths_raw.to_excel(r'./backup_data/Deaths_raw_backup' + date_time_trailer +  '.xlsx', index = True)
+# ConfirmedCases_raw.to_excel(r'./backup_data/ConfirmedCases_raw_backup' + date_time_trailer + '.xlsx', index = True)
+
+######################################################################################
+Recoveries_raw.to_excel(r'./backup_data/Recoveries_raw_backup' + date_time_trailer +  '.xlsx', index = True)
+Deaths_raw.to_excel(r'./backup_data/Deaths_raw_backup' + date_time_trailer +  '.xlsx', index = True)
+ConfirmedCases_raw.to_excel(r'./backup_data/ConfirmedCases_raw_backup' + date_time_trailer + '.xlsx', index = True)
+
+
 
 #funkcja, ktora zamienia uklad tabeli do takiego, gdzie daty sa w kolejnych wierszach a nie w kolumnach
 def cleandata(df_raw):
@@ -32,17 +81,27 @@ def cleandata(df_raw):
     #df_cleaned=df_cleaned.set_index(['Country/Region','Province/State','Date'])
     return df_cleaned 
 
-Country_unique_Confirmed = list(np.unique(ConfirmedCases_raw['Country/Region']))
-
+     
 
 # Clean all datasets
 ConfirmedCases=cleandata(ConfirmedCases_raw)
 Deaths=cleandata(Deaths_raw)
 Recoveries=cleandata(Recoveries_raw)
 
+# list(ConfirmedCases.index.get_level_values(0))
+# list(ConfirmedCases.index.get_level_values(1))
+
+# #sumowanie przypadkow pod prowincjach (wyswietlam tylko kraje)
+ConfirmedCases = ConfirmedCases.groupby(['Country/Region','Date']).sum()
+ConfirmedCases["Date"] = list(ConfirmedCases.index.get_level_values(1))
+ConfirmedCases["Country/Region"] = list(ConfirmedCases.index.get_level_values(0))
+Deaths = Deaths.groupby(['Country/Region','Date']).sum()
+Recoveries = Recoveries.groupby(['Country/Region','Date']).sum()
+
+ConfirmedCases.index.names = ['Country/Region inx','Date inx']
    #DataFrame ze wszystkimi danymi do eksportu
 df_final = pd.DataFrame({
-        "Province/State": ConfirmedCases['Province/State'],
+        # "Province/State": ConfirmedCases['Province/State'],
         "Country/Region": ConfirmedCases['Country/Region'],
         "Lat": ConfirmedCases['Lat'],
         "Long": ConfirmedCases['Long'],
@@ -56,10 +115,30 @@ df_final = pd.DataFrame({
 #df_final2 = df_final.sort_values(['Date'])
 
 
+    #if Country_unique_Confirmed.index(i):
+        #res_list.extend([i]) 
+
+#    #DataFrame ze wszystkimi danymi do eksportu
+# df_final_recovered = pd.DataFrame({
+#         #"Province/State": Recoveries['Province/State'],
+#         "Country/Region": Recoveries['Country/Region'],
+#         #"Lat": Recoveries['Lat'],
+#        # "Long": Recoveries['Long'],
+#         "Date": Recoveries['Date'],
+#         #"Confirmed": ConfirmedCases['Cases'],
+#         #"Deaths": Deaths['Cases'],
+#         "Recoveries": Recoveries['Cases']
+#         #"OrderNumber_Confirmed":np.zeros(len(ConfirmedCases)),
+#         #"OrderNumber_Deaths":np.zeros(len(ConfirmedCases))
+#         })
+
 Country_unique = list(np.unique(df_final['Country/Region']))
 #convert date
-df_final['Date'] = [datetime.datetime.strptime(df_final['Date'][i], '%m/%d/%y') for i in range(0,len(df_final)) ]
+df_final['Date'] = [datetime.strptime(df_final['Date'][i], '%m/%d/%y') for i in range(0,len(df_final)) ]
 df_final = df_final.sort_values(['Country/Region','Date'])
+
+# df_final_recovered['Date'] = [datetime.datetime.strptime(df_final_recovered['Date'][i], '%m/%d/%Y') for i in range(0,len(df_final_recovered)) ]
+# df_final_recovered = df_final_recovered.sort_values(['Country/Region','Date'])
 
  #nadanie numeru porzadkowego dla kazdego kraju od dnia stwierdzenia 150 przypadków w danym kraju
 for j in range(0,len(Country_unique)):
@@ -161,7 +240,9 @@ for j in range(0,len(Country_unique)):
     # print(df_final["OrderNumber_Deaths"][res_list])
     # print(df_final["Deaths"][res_list])
                 #export
-df_final.to_excel(r'AllData_20032020_order1.xlsx', index = False)
+#df_final.to_excel(r'AllData_20032020_order1.xlsx', index = False)
+df_final.to_excel(r'AllData_order.xlsx', index = False)
+# df_final_recovered.to_excel(r'AllData_recovered.xlsx', index = False)
 
 #ConfirmedCases.to_excel(r'ConfirmedCases.xlsx', index = False)
 #Deaths.to_excel(r'Deaths.xlsx', index = False)
